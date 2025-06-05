@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { AlignJustifyIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -102,10 +103,63 @@ export default function Home() {
     </div>
   );
   */
-  <main className="min-h-screen p-8 flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold mb-6">Hola, soy Daniel Solis Alfonso</h1>
-      <p className="text-lg text-gray-600 mb-6">Desarrollador de Software</p>
-      <Button>Ver mis proyectos</Button>
-    </main>
+<main className="bg-neutral-800 text-white px-4 py-8">
+  {/* Bloque actual: tu presentación */}
+  <section className="max-w-4xl mx-auto mb-12 p-6 rounded-xl flex items-center gap-6 shadow-lg">
+    {/* Imagen */}
+    <img
+      src="/mi_foto.jpg"
+      alt="foto"
+      className="w-28 h-28 rounded-full object-cover"
+    />
+
+    {/* Info */}
+    <div>
+      <h1 className="text-2xl font-bold">Daniel Solis Alfonso (DanielSama)</h1>
+      <h2 className="text-lg font-semibold text-white-100 mt-1">
+        Programador, Desarrollador de Software
+      </h2>
+      <p className="text-sm text-gray-400 mt-1">🌍 Sevilla</p>
+
+      <div className="flex flex-wrap items-center gap-3 mt-4">
+        <span className="bg-green-700 text-white text-sm px-3 py-1 rounded-full">
+          danielsolisalf@gmail.com
+        </span>
+        <a
+          href="#"
+          className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+        >
+          📄 CV
+        </a>
+        <a
+          href="#"
+          className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+        >
+          🐱 GitHub
+        </a>
+        <a
+          href="#"
+          className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+        >
+          💼 LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* 🔽 Nueva sección: Sobre mí */}
+  <section className="max-w-3xl mx-auto text-left">
+    <h2 className="text-3xl font-bold text-green-300 mb-4">Sobre mí</h2>
+    <p className="text-gray-300 text-base leading-relaxed">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id felis ut velit sollicitudin
+      facilisis. Curabitur in nisi at metus tempus fermentum. Integer vel lacus nec ligula tempor
+      tincidunt. Suspendisse at elit nec augue imperdiet accumsan.
+    </p>
+  </section>
+<section className="max-w-3xl mx-auto text-left">
+  <h2 className="text-2xl font-bold text-green-300 mb-4 mt-5">Tecnologías</h2>
+  <p></p>
+</section>
+</main>
   );
 }
