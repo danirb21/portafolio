@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    /*<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -99,5 +100,12 @@ export default function Home() {
         </a>
       </footer>
     </div>
+  );
+  */
+  <main className="min-h-screen p-8 flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold mb-6">Hola, soy Daniel Solis Alfonso</h1>
+      <p className="text-lg text-gray-600 mb-6">Desarrollador de Software</p>
+      <Button>Ver mis proyectos</Button>
+    </main>
   );
 }
