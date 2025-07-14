@@ -1,7 +1,8 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { AlignJustifyIcon } from "lucide-react";
 
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import Technologies from "@/components/ui/Technologies";
 export default function Home() {
   return (
     /*<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -103,63 +104,234 @@ export default function Home() {
     </div>
   );
   */
-<main className="bg-neutral-800 text-white px-4 py-8">
-  {/* Bloque actual: tu presentación */}
-  <section className="max-w-4xl mx-auto mb-12 p-6 rounded-xl flex items-center gap-6 shadow-lg">
-    {/* Imagen */}
-    <img
-      src="/mi_foto.jpg"
-      alt="foto"
-      className="w-28 h-28 rounded-full object-cover"
-    />
+    <main className="bg-neutral-800 text-white px-4 py-8">
+      {/* Bloque actual: tu presentación */}
+      <section className="max-w-4xl mx-auto mb-12 p-6 rounded-xl flex items-center gap-6 shadow-lg">
+        {/* Imagen */}
+        <img
+          src="/mi_foto.jpg"
+          alt="foto"
+          className="w-28 h-28 rounded-full object-cover"
+        />
 
-    {/* Info */}
-    <div>
-      <h1 className="text-2xl font-bold">Daniel Solis Alfonso (DanielSama)</h1>
-      <h2 className="text-lg font-semibold text-white-100 mt-1">
-        Programador, Desarrollador de Software
-      </h2>
-      <p className="text-sm text-gray-400 mt-1">🌍 Sevilla</p>
+        {/* Info */}
+        <div>
+          <h1 className="text-2xl font-bold">Daniel Solís Alfonso</h1>
+          <h2 className="text-lg font-semibold text-white-100 mt-1">
+            Programador, Desarrollador de Software
+          </h2>
+          <p className="text-sm text-gray-400 mt-1">🌍 Sevilla</p>
 
-      <div className="flex flex-wrap items-center gap-3 mt-4">
-        <span className="bg-green-700 text-white text-sm px-3 py-1 rounded-full">
-          danielsolisalf@gmail.com
-        </span>
-        <a
-          href="#"
-          className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
-        >
-          📄 CV
-        </a>
-        <a
-          href="#"
-          className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
-        >
-          🐱 GitHub
-        </a>
-        <a
-          href="#"
-          className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
-        >
-          💼 LinkedIn
-        </a>
-      </div>
-    </div>
-  </section>
+          <div className="flex flex-wrap items-center gap-3 mt-4">
+            <span className="bg-green-700 text-white text-sm px-3 py-1 rounded-full">
+              danielsolisalf@gmail.com
+            </span>
+            <a
+              title="Curriculum"
+              href="/documento/CV_Daniel_Solis_Alfonso.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+            >
+              📄 CV
+            </a>
+            <a
+              title="Github"
+              href="https://github.com/danirb21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+            >
+              <FaGithub className="text-2xl" />
+            </a>
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/in/daniel-sol%C3%ADs-alfonso-10723333a/"
+              target="_blank"
+              className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+            >
+              <FaLinkedin className="text-2xl" />
+            </a>
+          </div>
+        </div>
+      </section>
 
-  {/* 🔽 Nueva sección: Sobre mí */}
-  <section className="max-w-3xl mx-auto text-left">
-    <h2 className="text-3xl font-bold text-green-300 mb-4">Sobre mí</h2>
-    <p className="text-gray-300 text-base leading-relaxed">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id felis ut velit sollicitudin
-      facilisis. Curabitur in nisi at metus tempus fermentum. Integer vel lacus nec ligula tempor
-      tincidunt. Suspendisse at elit nec augue imperdiet accumsan.
-    </p>
-  </section>
-<section className="max-w-3xl mx-auto text-left">
-  <h2 className="text-2xl font-bold text-green-300 mb-4 mt-5">Tecnologías</h2>
-  <p></p>
-</section>
-</main>
+      {/* 🔽 Nueva sección: Sobre mí */}
+      <section className="max-w-3xl mx-auto text-left">
+        <h2 className="text-3xl font-bold text-green-300 mb-1">Sobre mí</h2>
+        <p className="text-gray-300 text-base leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id felis ut velit sollicitudin
+          facilisis. Curabitur in nisi at metus tempus fermentum. Integer vel lacus nec ligula tempor
+          tincidunt. Suspendisse at elit nec augue imperdiet accumsan.
+        </p>
+      </section>
+      <section className="max-w-3xl mx-auto text-left">
+        <Technologies />
+      </section>
+      <hr className="h-px my-4 border-gray-500 dark:border-neutral-500"></hr>
+      {/*
+      <section className="max-w-3xl mx-auto text-left">
+        <h2 className="text-2xl font-bold text-green-300 mt-4">Experiencia Laboral</h2>
+        <h3 className="text-1xl font-bold text-white mt-2">Mantenimiento y Desarrollo en Odoo </h3>
+        <p className="text-sm text-gray-300 mt-1">Practicas Realizadas en Guadaltech, encargado de soporte, mantenimiento y desarrollo en Odoo</p>
+        <p className="text-xl text-white mt-2 font-bold">Tecnologias utilizadas</p>
+        <p className="text-1g text-rose-600 font-bold text-right">ABR.2024 -JUN.2024</p>
+      </section>
+     */}
+      <section className="max-w-3xl mx-auto text-left">
+        <h2 className="text-2xl font-bold text-green-300 mt-8">Experiencia Laboral</h2>
+        {/* Título y fecha en la misma línea */}
+        <div className="flex justify-between items-center mt-2">
+          <h3 className="text-lg font-bold text-white">Mantenimiento y Desarrollo en Odoo</h3>
+          <span className="text-sm text-rose-500 font-semibold">ABR.2024 – JUN.2024</span>
+        </div>
+        <p className="text-sm text-gray-300 mt-1">
+          Prácticas realizadas en Guadaltech, encargado de soporte, mantenimiento y desarrollo en Odoo.
+        </p>
+        <div className="flex items-baseline gap-2 mt-2">
+          <h3 className="text-1g font-bold text-white">Tecnologías usadas:</h3>
+          <p className="text-sm text-gray-300">Python, Odoo</p>
+        </div>
+        <div className="flex justify-between items-center mt-4">
+          <h3 className="text-lg font-bold text-white">Desarrollo Web con la tecnologia Oracle Apex</h3>
+          <span className="text-sm text-rose-500 font-semibold">ABR.2022 - JUN.2022</span>
+        </div>
+        <p className="text-sm text-gray-300 mt-1">
+          Prácticas realizadas en Edahula, encargado de desarrollar webs, utilizando Oracle Apex
+        </p>
+        <div className="flex items-baseline gap-2 mt-2">
+          <h3 className="text-1g font-bold text-white">Tecnologías usadas:</h3>
+          <p className="text-sm text-gray-300">Oracle Apex, SQL, PL/SQL, Javascript</p>
+        </div>
+      </section>
+      <section className="max-w-3xl mx-auto text-left">
+        <h2 className="text-2xl font-bold text-green-300 mt-3">Formacion</h2>
+        <div className="flex justify-between items-center mt-2">
+          <h3 className="text-xl font-bold text-white mt-1">Tecnico Superior de Desarrollo de Aplicaciones Multiplataforma</h3>
+          <span className="text-sm text-rose-500 font-semibold mt-1">SEPT.2022 - JUN.2024</span>
+        </div>
+        <h4 className="text-1g text-gray-300 mt-1">Centro educativo: Campus Camara FP Sevilla</h4>
+        <div className="flex justify-between items-center mt-2">
+          <h3 className="text-xl font-bold text-white mt-1">Tecnico Sistemas MicroInformatico y Redes</h3>
+          <span className="text-sm text-rose-500 font-semibold mt-1">SEPT.2020 - JUN.2022</span>
+        </div>
+        <h4 className="text-1g text-gray-300 mt-1">Centro educativo: IES Cantillana</h4>
+      </section>
+      <section className="max-w-3xl mx-auto text-left">
+        <h2 className="text-2xl font-bold text-green-300 mt-2">Formacion Complementaria</h2>
+        <div className="flex justify-between items-center mt-1">
+          <h3 className="text-xl font-bold text-white mt-1">Curso Inteligencia Artificial</h3>
+          <span className="text-sm text-rose-500 font-semibold mt-1">ABR.2025 - MAY.2025</span>
+        </div>
+        <h4 className="text-1g text-gray-300 mt-1">Andalucia Emplea+</h4>
+        <div className="flex justify-between items-center mt-1">
+          <h3 className="text-xl font-bold text-white mt-1">Curso Creacion y Publicacion Webs</h3>
+          <span className="text-sm text-rose-500 font-semibold mt-1">ABR.2025 - JUN.2025</span>
+        </div>
+        <h4 className="text-1g text-gray-300 mt-1">MainJobs</h4>
+      </section>
+      <hr className="h-px my-4 border-gray-500 dark:border-neutral-500"></hr>
+      <section className="max-w-3xl mx-auto text-left">
+        <h2 className="text-2xl font-bold text-green-300 mt-3">Proyectos</h2>
+        <h3 className="text-xl font-bold text-white mt-5">1. AppBiblioteca</h3>
+        {/* Aqui iria la descripcion del proyecto */}
+        <p className="text-sm text-gray-300 mt-2">AppBiblioteca es una aplicacion de movil encargada de gestionar una biblioteca con funcionalidades como buscar, borrar, editar libros. 
+          Tambien permite gestionar citas con los clientes manejando la fecha y los libros a devolver. </p>
+         <div className="mt-5">
+          <a
+            title="Repositorio App"
+            href="https://github.com/danirb21/AppBiblioteca"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+          >
+            Repositorio
+          </a>
+          </div>
+        {/* <h4 className="text-lg font-bold text-gray-300 whitespace-nowrap mt-3">Tecnologías Usadas:</h4> */}
+        <div className="flex items-center gap-3 flex-wrap mt-6">
+          <Badge
+            title="Java"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-white"
+          >
+            <Image src="/java.png" alt="java" width={35} height={35} />
+          </Badge>
+
+          <Badge
+            title="Android Studio"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-green-400"
+          >
+            <Image src="/androidstudio.svg" alt="Android Studio" width={35} height={35} />
+          </Badge>
+          <Badge
+            title="Firebase"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-yellow-700"
+          >
+            <Image src="/Firebase.svg" alt="Firebase" width={80} height={80} />
+          </Badge>
+        </div>
+        <div className="flex items-center gap-3 mt-10">
+          <h3 className="text-xl font-bold text-white">2. Advent Of Code 2024 </h3>
+          <Image
+            title="Advent of Code 2024"
+            src="/aoc.png"
+            alt="Advent of Code"
+            width={45}
+            height={45}
+          />
+        </div>
+        <p className="text-sm text-gray-300 mt-1">Advent of Code es un calendario de Adviento de pequeños rompecabezas de programación
+          para una variedad de niveles de habilidad que se pueden resolver en cualquier lenguaje de programación que desees.</p>
+         <div className="mt-5">
+          <a
+            title="Repositorio Aoc"
+            href="https://github.com/danirb21/AdventOfCode"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+          >
+            Repositorio
+          </a>
+        </div>
+        {/* <h4 className="text-lg font-bold text-gray-300 whitespace-nowrap mt-3">Tecnologías Usadas:</h4> */}
+        <div className="flex items-center gap-3 flex-wrap mt-6">
+          <Badge
+            title="Java"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-white"
+          >
+            <Image src="/java.png" alt="java" width={35} height={35} />
+          </Badge>
+        </div>   
+        <h3 className="text-xl font-bold text-white mt-5">3. ProjectCs</h3>
+        <p className="text-sm text-gray-200 mt-1">Proyecto basado en el juego Counter-Strike 2 y en su sistema de ranking llamado VRS (valve ranking) en su mundo competitivo (e-sports).</p>
+        {/* <h4 className="text-lg font-bold text-gray-300 whitespace-nowrap mt-3">Tecnologías Usadas:</h4> */}
+        <div className="flex items-center gap-3 flex-wrap mt-6">
+          <Badge
+            title="JavaScript"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-white"
+          >
+            <Image src="/javascript.svg" alt="javascript" width={35} height={35} />
+          </Badge>
+          <Badge
+            title="React Frontend"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-white"
+          >
+            <Image src="/react.svg" alt="React" width={35} height={35} />
+          </Badge>
+          <Badge
+            title="Node.js backend"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-white"
+          >
+            <Image src="/nodejs.svg" alt="NodeJs" width={40} height={40} />
+          </Badge>
+          <Badge
+            title="mysql"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-white"
+          >
+            <Image src="/mysql.svg" alt="mysql" width={50} height={50} />
+          </Badge>
+        </div>
+        </section>
+    </main>
   );
 }
