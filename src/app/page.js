@@ -160,9 +160,10 @@ export default function Home() {
       <section className="max-w-3xl mx-auto text-left">
         <h2 className="text-3xl font-bold text-green-300 mb-1">Sobre mí</h2>
         <p className="text-gray-300 text-base leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id felis ut velit sollicitudin
-          facilisis. Curabitur in nisi at metus tempus fermentum. Integer vel lacus nec ligula tempor
-          tincidunt. Suspendisse at elit nec augue imperdiet accumsan.
+          Apasionado por la programación y el desarrollo de software, he tenido la oportunidad de participar en proyectos reales durante mis prácticas en Guadaltech (Odoo) y Edahula (Oracle Apex), a lo largo de mi formación y en mis propios proyectos. 
+          Tengo varios Proyectos Personales en mi cuenta de Github.
+          <br></br>Como proyecto final de mi formación desarrollé una aplicación completa de gestión de bibliotecas en android. 
+          Me implico al máximo en lo que hago, con iniciativa, capacidad de adaptación y muchas ganas de seguir creciendo profesionalmente y aportar desde el primer día.
         </p>
       </section>
       <section className="max-w-3xl mx-auto text-left">
