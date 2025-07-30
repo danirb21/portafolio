@@ -332,6 +332,17 @@ export default function Home() {
             <Image src="/mysql.svg" alt="mysql" width={50} height={50} />
           </Badge>
         </div>
+         <div className="mt-5">
+          <a
+            title="Repositorio ProjectCs"
+            href="https://github.com/danirb21/ProjectCs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+          >
+            Repositorio
+          </a>
+        </div>
         </section>
     </main>
   );
