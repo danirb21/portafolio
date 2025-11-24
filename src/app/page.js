@@ -105,15 +105,7 @@ export default function Home() {
     </div>
   );
   */
-      <>
-      <Head>
-        <title key="title">Daniel Solís - Portafolio</title>
-        <meta
-          key="description"
-          name="description"
-          content="Portafolio web de Daniel Solís, desarrollador de software"
-        />
-      </Head>
+      
     <main className="bg-neutral-800 text-white px-4 py-8">
       {/* Bloque actual: tu presentación */}
       <section className="max-w-4xl mx-auto mb-12 p-6 rounded-xl flex items-center gap-6 shadow-lg">
@@ -359,6 +351,5 @@ export default function Home() {
               Preparado para futuras estadísticas y logros, combinando experiencia de usuario, lógica de juego y persistencia de datos.</p> */}
         </section>
     </main>
-    </>
   );
 }
