@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import Technologies from "@/components/ui/Technologies";
+import Head  from "next/head";
 export default function Home() {
   return (
     /*<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -104,6 +105,15 @@ export default function Home() {
     </div>
   );
   */
+      <>
+      <Head>
+        <title key="title">Daniel Solís - Portafolio</title>
+        <meta
+          key="description"
+          name="description"
+          content="Portafolio web de Daniel Solís, desarrollador de software"
+        />
+      </Head>
     <main className="bg-neutral-800 text-white px-4 py-8">
       {/* Bloque actual: tu presentación */}
       <section className="max-w-4xl mx-auto mb-12 p-6 rounded-xl flex items-center gap-6 shadow-lg">
@@ -343,7 +353,12 @@ export default function Home() {
             Repositorio
           </a>
         </div>
+         {/* <h3 className="text-xl font-bold text-white mt-5">3.Ahorcado Online</h3>
+          <p className="text-sm text-gray-200 mt-1">Proyecto basado en un juego clásico reinventado (Ahorcado) con modo competitivo, login de usuarios e invitado.
+            Gana puntos, compite en la leaderboard global y mejora tu ranking con cada partida.
+              Preparado para futuras estadísticas y logros, combinando experiencia de usuario, lógica de juego y persistencia de datos.</p> */}
         </section>
     </main>
+    </>
   );
 }
