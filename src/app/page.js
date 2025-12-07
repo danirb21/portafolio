@@ -274,7 +274,7 @@ export default function Home() {
           </Badge>
         </div>
         <div className="flex items-center gap-3 mt-10">
-          <h3 className="text-xl font-bold text-white">2. Advent Of Code 2024 </h3>
+          <h3 className="text-xl font-bold text-white">2. Advent Of Code </h3>
           <Image
             title="Advent of Code 2024"
             src="/aoc.png"
@@ -308,6 +308,17 @@ export default function Home() {
         <h3 className="text-xl font-bold text-white mt-5">3. ProjectCs</h3>
         <p className="text-sm text-gray-200 mt-1">Proyecto basado en el juego Counter-Strike 2 y en su sistema de ranking llamado VRS (valve ranking) en su mundo competitivo (e-sports).</p>
         {/* <h4 className="text-lg font-bold text-gray-300 whitespace-nowrap mt-3">Tecnologías Usadas:</h4> */}
+        <div className="mt-5">
+          <a
+            title="Repositorio ProjectCs"
+            href="https://github.com/danirb21/ProjectCs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+          >
+            Repositorio
+          </a>
+        </div>
         <div className="flex items-center gap-3 flex-wrap mt-6">
           <Badge
             title="JavaScript"
@@ -334,21 +345,40 @@ export default function Home() {
             <Image src="/mysql.svg" alt="mysql" width={50} height={50} />
           </Badge>
         </div>
-         <div className="mt-5">
-          <a
-            title="Repositorio ProjectCs"
-            href="https://github.com/danirb21/ProjectCs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
-          >
-            Repositorio
-          </a>
-        </div>
-         {/* <h3 className="text-xl font-bold text-white mt-5">3.Ahorcado Online</h3>
-          <p className="text-sm text-gray-200 mt-1">Proyecto basado en un juego clásico reinventado (Ahorcado) con modo competitivo, login de usuarios e invitado.
+          <h3 className="text-xl font-bold text-white mt-5">4. Ahorcado</h3>
+          <p className="text-sm text-gray-200 mt-1">Proyecto basado en un juego clásico reinventado (Ahorcado) con modo competitivo, login de usuarios y modo invitado.
             Gana puntos, compite en la leaderboard global y mejora tu ranking con cada partida.
-              Preparado para futuras estadísticas y logros, combinando experiencia de usuario, lógica de juego y persistencia de datos.</p> */}
+              Preparado para futura version web</p>
+           <div className="mt-5">
+            <a
+              title="Repositorio Ahorcado"
+              href="https://github.com/danirb21/Ahorcado"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-green-500 text-green-400 rounded-full px-3 py-1 text-sm hover:bg-green-800"
+            > 
+            Repositorio</a>
+          </div>
+          <div className="flex items-center gap-3 flex-wrap mt-6">
+            <Badge
+            title="Python"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-white"
+            >
+            <Image src="/python.svg" alt="python" width={35} height={35} />
+          </Badge>
+            <Badge
+            title="Flask"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-white"
+            >
+            <Image src="/flask_letras.svg" alt="Flask" width={50} height={50} />
+          </Badge>
+          <Badge
+            title="Sqlite"
+            className="rounded-full px-3 py-1 flex items-center gap-2 bg-white"
+            >
+            <Image src="/sqlite.svg" alt="Sqlite" width={55} height={55} />
+          </Badge>
+          </div>
         </section>
     </main>
   );
