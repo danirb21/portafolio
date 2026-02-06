@@ -210,6 +210,11 @@ export default function Home() {
       <section className="max-w-3xl mx-auto text-left">
         <h2 className="text-2xl font-bold text-green-300 mt-3">Formacion</h2>
         <div className="flex justify-between items-center mt-2">
+          <h3 className="text-xl font-bold text-white mt-1">Tecnico Superior de Desarrollo de Aplicaciones Web</h3>
+          <span className="text-sm text-rose-500 font-semibold mt-1">NOV. 2025</span>
+        </div>
+        <h4 className="text-1g text-gray-300 mt-1">Centro educativo: IES Jacaranda (Brenes)</h4>
+        <div className="flex justify-between items-center mt-2">
           <h3 className="text-xl font-bold text-white mt-1">Tecnico Superior de Desarrollo de Aplicaciones Multiplataforma</h3>
           <span className="text-sm text-rose-500 font-semibold mt-1">SEPT.2022 - JUN.2024</span>
         </div>
